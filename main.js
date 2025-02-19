@@ -52,14 +52,14 @@ console.log("Exercício 5: " + desconto);
 //Exercício 6: filter() – Filtrando valores em um array
 //Crie um array com idades e use o método filter() para retornar apenas as idades menores que 18 anos.
 const idades = [10, 12, 14, 15, 16, 20, 22];
-const maioresDeIdade = idades.filter(idade => idade >= 18);
+const menoresDeIdade = idades.filter(idade => idade < 18);
 
-console.log("Exercício 6: " + maioresDeIdade);
+console.log("Exercício 6: " + menoresDeIdade);
 
 //Exercício 7: reduce() – Somando valores de um array
 //Crie um array com números e use o método reduce() para calcular o produto (multiplicação de todos os números).
 
 const numbers = [10, 15, 20, 25, 30, 35, 40];
-const soma = numbers.reduce((total, num) => total + num, 0);
+const multiplicar = numbers.reduce((total, num) => total * num);
 
-console.log("Exercício 7: " + soma);
+console.log("Exercício 7: " + multiplicar);
